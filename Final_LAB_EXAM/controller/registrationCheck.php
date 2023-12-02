@@ -10,26 +10,7 @@
     $fullName = $_REQUEST['fullName'];
     $contactNo = $_REQUEST['contactNo'];
 
-    if (strlen($username) < 6) {
-        echo "<h1>Username must be at least 6 characters long!</h1>";
-        exit(); 
-    }
-
-    if (strlen($password) < 4) {
-        echo "<h1>Password must be at least 4 characters long!</h1>";
-        exit(); 
-    }
-
-    if ($password !== $confirmPassword) {
-        echo "<h1>Password and Confirm Password do not match!</h1>";
-        exit(); 
-    }
-
-    if ($username == "" || $password == "" || $email == "" || $fullName == "" || $contactNo == "") {
-        echo "<h1>Null username or password or email or contact number!</h1>";
-        exit(); 
-    }
-
+  
     $user = ['username' => $username, 'password' => $password, 'email' => $email, 'fullName' => $fullName, 'contactNo' => $contactNo];
     $status = registration($user);
 
@@ -39,6 +20,38 @@
     } else {
         echo "Invalid user!";
     }
+
+<script>
+function updateValidation() 
+{
+    let username = document.getElementById("emp_name").value;
+    let contactNo = document.getElementById("cont_no").value;
+    let fullName = document.getElementById("emp_uname").value;
+    let password = document.getElementById("emp_pass").value;
+  let email= document.getElementById("email").value;
+     if (username < 6) {
+        alert("Username must be at least 6 characters long!)";
+        
+    }
+
+    if (password < 4) {
+       alert("Password must be at least 4 characters long");
+        
+    }
+
+    if (password !== confirmPassword) {
+        alert("Password and Confirm Password do not match!");
+        
+    }
+
+    if (username == "" || password == "" || email == "" || fullName == "" || contactNo == "") {
+        alert("Null username or password or email or contact number!)";
+         
+    }
+
+
+}
+</script>
 ?>
 
 <html>
