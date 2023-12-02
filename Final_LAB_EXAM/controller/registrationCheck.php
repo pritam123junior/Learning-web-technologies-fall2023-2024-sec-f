@@ -22,13 +22,14 @@
     }
 
 <script>
-function updateValidation() 
+function regcheckvlidation() 
 {
     let username = document.getElementById("emp_name").value;
-    let contactNo = document.getElementById("cont_no").value;
+    let contactNo = document.getElementById("emp_cno").value;
     let fullName = document.getElementById("emp_uname").value;
     let password = document.getElementById("emp_pass").value;
   let email= document.getElementById("email").value;
+      let confirmPassword= document.getElementById("cp").value;
      if (username < 6) {
         alert("Username must be at least 6 characters long!)";
         
