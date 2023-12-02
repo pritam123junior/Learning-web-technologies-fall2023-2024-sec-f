@@ -59,6 +59,6 @@ function regcheckvlidation()
 <body>
     <hr>
     <br>
-    <h2> Click here to<a href="../view/login.php"> login </a> </h2>
+    <h2> Click here to<a href="../view/login.php"> lgin </a> </h2>
 </body>
 </html>
