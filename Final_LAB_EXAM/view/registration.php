@@ -1,6 +1,6 @@
 <?php
     //include_once('../controller/sessionCheck.php');
-    //session_start();
+    //session_stat();
 ?>
 
 <html>
